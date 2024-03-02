@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.home-button,
+.configuration-button,
+.theory-button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.home-button {
+  background-color: var(--primary-700);
+}
+.configuration-button {
+  background-color: var(--secondary-300);
+}
+.theory-button {
+  background-color: var(--primary-700);
+}

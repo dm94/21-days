@@ -1,0 +1,22 @@
+.home {
+  overflow: hidden auto;
+}
+
+.calendar,
+.configuration,
+.theory {
+  width: 100vw;
+  height: 100vh;
+}
+
+.calendar {
+  background-color: var(--background-950);
+}
+
+.configuration {
+  background-color: var(--background-800);
+}
+
+.theory {
+  background-color: var(--background-950);
+}
