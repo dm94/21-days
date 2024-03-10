@@ -1,0 +1,12 @@
+{
+  "jsxSingleQuote": false,
+  "overrides": [
+    {
+      "files": ["*.tsx", "*.ts"],
+      "options": {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    }
+  ]
+}
