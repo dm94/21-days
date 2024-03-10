@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto Regular"),
+    url("/fonts/Roboto/roboto-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto Bold"),
+    url("/fonts/Roboto/roboto-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --font-roboto-medium: 500 1.5rem/28px var(--font-family);
+}
