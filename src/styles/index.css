@@ -1,4 +1,4 @@
-:root[data-theme='light'] {
+:root[data-theme="light"] {
   --text-50: #f4f0f0;
   --text-100: #e9e2e2;
   --text-200: #d3c5c5;
@@ -59,7 +59,7 @@
   --accent-900: #151e15;
   --accent-950: #0b0f0b;
 }
-:root[data-theme='dark'] {
+:root[data-theme="dark"] {
   --text-50: #0e0b0b;
   --text-100: #1d1616;
   --text-200: #392d2d;

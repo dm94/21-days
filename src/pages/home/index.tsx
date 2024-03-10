@@ -3,12 +3,11 @@ import './style.css';
 
 export default function Home() {
   return (
-    <div className='home'>
-      <div className='calendar' id='calendar'>
-        <Menu />
-      </div>
-      <div className='configuration' id='configuration' />
-      <div className='theory' id='theory' />
+    <div className="home">
+      <Menu />
+      <div className="calendar" id="calendar" />
+      <div className="configuration" id="configuration" />
+      <div className="theory" id="theory" />
     </div>
   );
 }
