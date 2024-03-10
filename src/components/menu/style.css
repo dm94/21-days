@@ -7,6 +7,11 @@
   font: var(--font-roboto-medium);
   max-height: 3.25rem;
   list-style: none;
+  background-color: var(--secondary-950);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: fit-content;
+  margin: auto;
+  border-radius: 0.5rem;
 }
 
 .button {
@@ -18,19 +23,21 @@
 
 .button a {
   text-decoration: none;
+  color: black;
 }
 
 nav {
   position: fixed;
   width: 100%;
+  top: 1.5rem;
 }
 
 .home-button {
-  background-color: var(--primary-700);
+  background-color: var(--secondary-700);
 }
 .configuration-button {
-  background-color: var(--secondary-300);
+  background-color: var(--primary-600);
 }
 .theory-button {
-  background-color: var(--primary-700);
+  background-color: var(--secondary-700);
 }

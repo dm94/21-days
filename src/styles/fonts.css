@@ -16,5 +16,5 @@
 
 :root {
   --font-family: "Roboto", sans-serif;
-  --font-roboto-medium: 500 1.5rem/28 var(--font-family);
+  --font-roboto-medium: 500 1.5rem/28px var(--font-family);
 }
