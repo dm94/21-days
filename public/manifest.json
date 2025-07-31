@@ -1,0 +1,52 @@
+{
+  "name": "21 Days - Seguimiento de Hábitos",
+  "short_name": "21 Days",
+  "description": "Aplicación web gratuita para formar hábitos siguiendo la teoría de los 21 días. Seguimiento visual, sistema de recompensas y soporte multiidioma.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10B981",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["health", "productivity", "lifestyle"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Marcar tarea completada",
+      "short_name": "Completar",
+      "description": "Marcar la tarea de hoy como completada",
+      "url": "/?action=complete",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Ver teoría",
+      "short_name": "Teoría",
+      "description": "Aprender sobre la teoría de los 21 días",
+      "url": "/theory",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
