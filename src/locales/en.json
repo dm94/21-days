@@ -11,9 +11,9 @@
     "completeTaskButton": "Task Completed!",
     "startJourney": "Start My Journey",
     "habitStatus": {
-      "startDate": "Start date: {{date}}",
-      "consecutiveDays": "Consecutive days: {{count}}",
-      "daysRemaining": "Days remaining: {{count}}",
+      "startDate": "Start date",
+      "consecutiveDays": "Consecutive days",
+      "daysRemaining": "Days remaining",
       "motivationalMessages": {
         "start": "Start your journey to a new habit!",
         "week1": "Excellent! You've completed your first week.",
