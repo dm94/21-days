@@ -1,0 +1,160 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "settings": "Configuración",
+    "theory": "Teoría"
+  },
+  "home": {
+    "title": "Teoría de los 21 Días",
+    "subtitle": "Forma un hábito en 21 días consecutivos",
+    "dayCounter": "Día {{count}} de 21",
+    "completeTaskButton": "¡Tarea Completada!",
+    "startJourney": "Comenzar Mi Viaje",
+    "habitStatus": {
+      "startDate": "Fecha de inicio: {{date}}",
+      "consecutiveDays": "Días consecutivos: {{count}}",
+      "daysRemaining": "Días restantes: {{count}}",
+      "motivationalMessages": {
+        "start": "¡Comienza tu viaje hacia un nuevo hábito!",
+        "week1": "¡Excelente! Has completado tu primera semana.",
+        "week2": "¡Increíble! Ya llevas dos semanas. ¡Sigue así!",
+        "week3": "¡Casi lo logras! Solo una semana más.",
+        "completed": "¡Felicitaciones! Has completado los 21 días."
+      }
+    },
+    "calendar": {
+      "title": "Tu Progreso de 21 Días",
+      "dayCompleted": "Día completado",
+      "currentDay": "Día actual",
+      "futureDay": "Día futuro"
+    },
+    "reset": {
+      "title": "Progreso Reiniciado",
+      "message": "No completaste la tarea ayer. Tu progreso se ha reiniciado automáticamente.",
+      "button": "Entendido"
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "rewards": {
+      "title": "Sistema de Recompensas",
+      "daily": {
+        "title": "Recompensa Diaria",
+        "placeholder": "Ej: Ver un episodio de mi serie favorita"
+      },
+      "weekly": {
+        "title": "Recompensa Semanal (7 días)",
+        "placeholder": "Ej: Salir a cenar a mi restaurante favorito"
+      },
+      "monthly": {
+        "title": "Recompensa Final (21 días)",
+        "placeholder": "Ej: Comprarme algo especial que he querido"
+      },
+      "save": "Guardar Recompensas",
+      "saved": "¡Recompensas guardadas exitosamente!"
+    },
+    "language": {
+      "title": "Idioma",
+      "current": "Idioma actual: {{language}}"
+    },
+    "data": {
+      "title": "Gestión de Datos",
+      "export": "Exportar Datos",
+      "import": "Importar Datos",
+      "reset": "Reiniciar Todo",
+      "resetConfirm": "¿Estás seguro de que quieres reiniciar todo tu progreso?"
+    }
+  },
+  "theory": {
+    "title": "La Teoría de los 21 Días",
+    "subtitle": "Descubre la ciencia detrás de la formación de hábitos y cómo puedes transformar tu vida en solo 21 días.",
+    "main": {
+      "title": "¿Qué es la Teoría de los 21 Días?",
+      "description": "La teoría de los 21 días sugiere que se necesitan aproximadamente 21 días de práctica consistente para formar un nuevo hábito. Esta idea se basa en la neuroplasticidad del cerebro y su capacidad para crear nuevas conexiones neuronales a través de la repetición.",
+      "quote": "\"Los hábitos son la base del éxito. Lo que haces repetidamente determina quién te conviertes.\""
+    },
+    "science": {
+      "title": "Fundamento Científico",
+      "neuroplasticity": {
+        "title": "Neuroplasticidad",
+        "description": "El cerebro puede reorganizarse y formar nuevas conexiones neuronales a cualquier edad."
+      },
+      "repetition": {
+        "title": "Repetición",
+        "description": "La práctica consistente fortalece las vías neuronales, haciendo que los comportamientos se vuelvan automáticos."
+      },
+      "automation": {
+        "title": "Automatización",
+        "description": "Después de 21 días, el comportamiento requiere menos esfuerzo consciente y se convierte en un hábito."
+      }
+    },
+    "tips": {
+      "title": "Consejos para el Éxito",
+      "consistency": {
+        "title": "Mantén la Consistencia",
+        "description": "Realiza tu hábito todos los días, sin excepciones. La consistencia es clave para el éxito."
+      },
+      "specific": {
+        "title": "Sé Específico",
+        "description": "Define claramente qué vas a hacer, cuándo y dónde. Los hábitos específicos son más fáciles de seguir."
+      },
+      "gradual": {
+        "title": "Comienza Gradualmente",
+        "description": "Empieza con versiones pequeñas de tu hábito. Es mejor hacer algo pequeño consistentemente que algo grande esporádicamente."
+      },
+      "environment": {
+        "title": "Prepara tu Entorno",
+        "description": "Modifica tu entorno para que sea más fácil realizar tu hábito y más difícil evitarlo."
+      }
+    },
+    "research": {
+      "title": "Referencias de Investigación",
+      "study1": {
+        "title": "Dr. Maxwell Maltz - Psicocibernética (1960)",
+        "description": "El origen de la teoría de los 21 días, basada en observaciones de pacientes de cirugía plástica."
+      },
+      "study2": {
+        "title": "Dr. Phillippa Lally - University College London (2009)",
+        "description": "Estudio que encontró que en promedio toma 66 días formar un hábito, variando de 18 a 254 días."
+      },
+      "study3": {
+        "title": "Investigación en Neuroplasticidad",
+        "description": "Estudios modernos confirman que el cerebro puede cambiar y adaptarse a través de la práctica repetida."
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "description": "Usa nuestra aplicación para rastrear tu progreso y formar un nuevo hábito en 21 días.",
+      "button": "Comenzar Mi Hábito"
+    }
+  },
+  "rewards": {
+    "daily": {
+      "title": "¡Recompensa Diaria!",
+      "message": "Has completado otro día. ¡Disfruta tu recompensa!",
+      "default": "¡Te mereces un pequeño descanso!"
+    },
+    "weekly": {
+      "title": "¡Recompensa Semanal!",
+      "message": "¡Increíble! Has completado 7 días consecutivos.",
+      "default": "¡Has logrado una semana completa!"
+    },
+    "final": {
+      "title": "¡Recompensa Final!",
+      "message": "¡Felicitaciones! Has completado los 21 días y formado un nuevo hábito.",
+      "default": "¡Has logrado algo extraordinario!"
+    },
+    "close": "Cerrar"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "success": "¡Éxito!",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "back": "Volver"
+  }
+}

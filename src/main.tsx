@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { Toaster } from 'sonner';
+import './index.css';
+import './lib/i18n';
+import App from "./App";
 
-// Styles
-import './styles/reset.css';
-import './styles/index.css';
-import './styles/fonts.css';
-
-// import i18n (needs to be bundled ;))
-import './i18n';
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>
+    <Toaster />
+  </StrictMode>
 );

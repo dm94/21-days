@@ -1,0 +1,160 @@
+{
+  "navigation": {
+    "home": "Home",
+    "settings": "Settings",
+    "theory": "Theory"
+  },
+  "home": {
+    "title": "21-Day Theory",
+    "subtitle": "Build a habit in 21 consecutive days",
+    "dayCounter": "Day {{count}} of 21",
+    "completeTaskButton": "Task Completed!",
+    "startJourney": "Start My Journey",
+    "habitStatus": {
+      "startDate": "Start date: {{date}}",
+      "consecutiveDays": "Consecutive days: {{count}}",
+      "daysRemaining": "Days remaining: {{count}}",
+      "motivationalMessages": {
+        "start": "Start your journey to a new habit!",
+        "week1": "Excellent! You've completed your first week.",
+        "week2": "Amazing! You're already two weeks in. Keep it up!",
+        "week3": "Almost there! Just one more week to go.",
+        "completed": "Congratulations! You've completed the 21 days."
+      }
+    },
+    "calendar": {
+      "title": "Your 21-Day Progress",
+      "dayCompleted": "Day completed",
+      "currentDay": "Current day",
+      "futureDay": "Future day"
+    },
+    "reset": {
+      "title": "Progress Reset",
+      "message": "You didn't complete the task yesterday. Your progress has been automatically reset.",
+      "button": "Got it"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "rewards": {
+      "title": "Reward System",
+      "daily": {
+        "title": "Daily Reward",
+        "placeholder": "e.g., Watch an episode of my favorite show"
+      },
+      "weekly": {
+        "title": "Weekly Reward (7 days)",
+        "placeholder": "e.g., Go out to dinner at my favorite restaurant"
+      },
+      "monthly": {
+        "title": "Final Reward (21 days)",
+        "placeholder": "e.g., Buy something special I've been wanting"
+      },
+      "save": "Save Rewards",
+      "saved": "Rewards saved successfully!"
+    },
+    "language": {
+      "title": "Language",
+      "current": "Current language: {{language}}"
+    },
+    "data": {
+      "title": "Data Management",
+      "export": "Export Data",
+      "import": "Import Data",
+      "reset": "Reset Everything",
+      "resetConfirm": "Are you sure you want to reset all your progress?"
+    }
+  },
+  "theory": {
+    "title": "The 21-Day Theory",
+    "subtitle": "Discover the science behind habit formation and how you can transform your life in just 21 days.",
+    "main": {
+      "title": "What is the 21-Day Theory?",
+      "description": "The 21-day theory suggests that it takes approximately 21 days of consistent practice to form a new habit. This idea is based on the brain's neuroplasticity and its ability to create new neural connections through repetition.",
+      "quote": "\"Habits are the foundation of success. What you do repeatedly determines who you become.\""
+    },
+    "science": {
+      "title": "Scientific Foundation",
+      "neuroplasticity": {
+        "title": "Neuroplasticity",
+        "description": "The brain can reorganize and form new neural connections at any age."
+      },
+      "repetition": {
+        "title": "Repetition",
+        "description": "Consistent practice strengthens neural pathways, making behaviors become automatic."
+      },
+      "automation": {
+        "title": "Automation",
+        "description": "After 21 days, the behavior requires less conscious effort and becomes a habit."
+      }
+    },
+    "tips": {
+      "title": "Tips for Success",
+      "consistency": {
+        "title": "Maintain Consistency",
+        "description": "Perform your habit every day, without exceptions. Consistency is key to success."
+      },
+      "specific": {
+        "title": "Be Specific",
+        "description": "Clearly define what you will do, when, and where. Specific habits are easier to follow."
+      },
+      "gradual": {
+        "title": "Start Gradually",
+        "description": "Begin with small versions of your habit. It's better to do something small consistently than something big sporadically."
+      },
+      "environment": {
+        "title": "Prepare Your Environment",
+        "description": "Modify your environment to make it easier to perform your habit and harder to avoid it."
+      }
+    },
+    "research": {
+      "title": "Research References",
+      "study1": {
+        "title": "Dr. Maxwell Maltz - Psycho-Cybernetics (1960)",
+        "description": "The origin of the 21-day theory, based on observations of plastic surgery patients."
+      },
+      "study2": {
+        "title": "Dr. Phillippa Lally - University College London (2009)",
+        "description": "Study that found it takes an average of 66 days to form a habit, ranging from 18 to 254 days."
+      },
+      "study3": {
+        "title": "Neuroplasticity Research",
+        "description": "Modern studies confirm that the brain can change and adapt through repeated practice."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start?",
+      "description": "Use our app to track your progress and form a new habit in 21 days.",
+      "button": "Start My Habit"
+    }
+  },
+  "rewards": {
+    "daily": {
+      "title": "Daily Reward!",
+      "message": "You've completed another day. Enjoy your reward!",
+      "default": "You deserve a little break!"
+    },
+    "weekly": {
+      "title": "Weekly Reward!",
+      "message": "Amazing! You've completed 7 consecutive days.",
+      "default": "You've achieved a full week!"
+    },
+    "final": {
+      "title": "Final Reward!",
+      "message": "Congratulations! You've completed the 21 days and formed a new habit.",
+      "default": "You've accomplished something extraordinary!"
+    },
+    "close": "Close"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back"
+  }
+}
