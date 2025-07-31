@@ -36,6 +36,7 @@
   },
   "settings": {
     "title": "Configuración",
+    "subtitle": "Personaliza tu experiencia y configura tus recompensas",
     "rewards": {
       "title": "Sistema de Recompensas",
       "daily": {
@@ -46,7 +47,7 @@
         "title": "Recompensa Semanal (7 días)",
         "placeholder": "Ej: Salir a cenar a mi restaurante favorito"
       },
-      "monthly": {
+      "final": {
         "title": "Recompensa Final (21 días)",
         "placeholder": "Ej: Comprarme algo especial que he querido"
       },
@@ -61,7 +62,9 @@
       "title": "Gestión de Datos",
       "export": "Exportar Datos",
       "import": "Importar Datos",
-      "reset": "Reiniciar Todo",
+      "resetTitle": "Reiniciar Todo",
+      "resetDescription": "Esta acción eliminará todo tu progreso y no se puede deshacer.",
+      "resetButton": "Reiniciar Todo",
       "resetConfirm": "¿Estás seguro de que quieres reiniciar todo tu progreso?"
     }
   },

@@ -36,6 +36,7 @@
   },
   "settings": {
     "title": "Settings",
+    "subtitle": "Customize your experience and configure your rewards",
     "rewards": {
       "title": "Reward System",
       "daily": {
@@ -46,7 +47,7 @@
         "title": "Weekly Reward (7 days)",
         "placeholder": "e.g., Go out to dinner at my favorite restaurant"
       },
-      "monthly": {
+      "final": {
         "title": "Final Reward (21 days)",
         "placeholder": "e.g., Buy something special I've been wanting"
       },
@@ -61,7 +62,9 @@
       "title": "Data Management",
       "export": "Export Data",
       "import": "Import Data",
-      "reset": "Reset Everything",
+      "resetTitle": "Reset Everything",
+      "resetDescription": "This action will delete all your progress and cannot be undone.",
+      "resetButton": "Reset Everything",
       "resetConfirm": "Are you sure you want to reset all your progress?"
     }
   },

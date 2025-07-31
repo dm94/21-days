@@ -82,7 +82,7 @@ const Settings = () => {
               {t("settings.title")}
             </h1>
             <p className="text-gray-600">
-              Personaliza tu experiencia y configura tus recompensas
+              {t("settings.subtitle")}
             </p>
           </header>
 
@@ -257,17 +257,17 @@ const Settings = () => {
           <div className="bg-white rounded-lg shadow-xl max-w-md w-full mx-4">
             <div className="p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {t("settings.data.resetConfirmTitle")}
+                {t("settings.data.resetTitle")}
               </h3>
               <p className="text-gray-600 mb-6">
-                {t("settings.data.resetConfirmMessage")}
+                {t("settings.data.resetConfirm")}
               </p>
               <div className="flex gap-3">
                 <button
                   onClick={() => setShowResetModal(false)}
                   className="flex-1 bg-gray-300 hover:bg-gray-400 text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors"
                 >
-                  {t("settings.data.cancelButton")}
+                  {t("common.cancel")}
                 </button>
                 <button
                   onClick={handleReset}
