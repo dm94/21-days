@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Globe } from 'lucide-react';
 
 const LanguageSelector = () => {
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
 
   const languages = [
     { code: 'es', name: 'Español', flag: '🇪🇸' },

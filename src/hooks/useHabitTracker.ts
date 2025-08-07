@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import useLocalStorage from './useLocalStorage';
 
 export interface HabitData {
@@ -39,6 +39,10 @@ export function useHabitTracker() {
   const [showReward, setShowReward] = useState<'daily' | 'weekly' | 'final' | null>(null);
   const [showResetModal, setShowResetModal] = useState(false);
 
+  const resetHabit = useCallback(() => {
+    setHabitData(initialHabitData);
+  }, [setHabitData]);
+
   // Check if habit should be reset due to missed day
   useEffect(() => {
     const checkForReset = () => {
@@ -56,7 +60,7 @@ export function useHabitTracker() {
     };
 
     checkForReset();
-  }, [habitData.lastCompletedDate]);
+  }, [habitData.lastCompletedDate, habitData.startDate, resetHabit]);
 
   const startHabit = () => {
     const today = new Date().toDateString();
@@ -97,10 +101,6 @@ export function useHabitTracker() {
     } else {
       setShowReward('daily');
     }
-  };
-
-  const resetHabit = () => {
-    setHabitData(initialHabitData);
   };
 
   const canCompleteToday = () => {
