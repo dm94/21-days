@@ -4,6 +4,7 @@ import { Calendar, Play, RotateCcw } from "lucide-react";
 import { useHabitTracker } from "../hooks/useHabitTracker";
 import LinearCalendar from "../components/LinearCalendar";
 import RewardModal from "../components/RewardModal";
+import ConfirmationModal from "../components/ConfirmationModal";
 import Confetti from "../components/Confetti";
 import Seo from "../components/SEO";
 
@@ -192,26 +193,15 @@ const Home = () => {
         rewards={rewards}
         onClose={() => setShowReward(null)}
       />
-      {showResetModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-md w-full mx-4 transition-colors duration-300">
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                {t("home.reset.title")}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                {t("home.reset.message")}
-              </p>
-              <button
-                onClick={() => setShowResetModal(false)}
-                className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors"
-              >
-                {t("home.reset.button")}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <ConfirmationModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        title={t("home.reset.title")}
+        message={t("home.reset.message")}
+        confirmText={t("home.reset.button")}
+        confirmButtonClass="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white"
+        singleButton={true}
+      />
     </>
   );
 };
