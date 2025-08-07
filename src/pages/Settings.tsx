@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 import { useHabitTracker, RewardSettings } from "../hooks/useHabitTracker";
 import LanguageSelector from "../components/LanguageSelector";
-import SEO from "../components/SEO";
+import NotificationSettings from "../components/NotificationSettings";
+import Seo from "../components/SEO";
 
 const Settings = () => {
   const { t } = useTranslation();
@@ -69,24 +70,20 @@ const Settings = () => {
 
   return (
     <>
-      <SEO
+      <Seo
         title={seoTitle}
         description={seoDescription}
         url="https://21days.deeme.dev/settings"
       />
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="space-y-6">
-          {/* Header */}
           <header className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
             <h1 className="text-2xl font-bold text-gray-900 mb-2">
               {t("settings.title")}
             </h1>
-            <p className="text-gray-600">
-              {t("settings.subtitle")}
-            </p>
+            <p className="text-gray-600">{t("settings.subtitle")}</p>
           </header>
-
-          {/* Reward System */}
+          <NotificationSettings />
           <section
             className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
             aria-labelledby="rewards-section"
@@ -176,8 +173,6 @@ const Settings = () => {
               )}
             </div>
           </section>
-
-          {/* Language Settings */}
           <section
             className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
             aria-labelledby="language-section"
@@ -193,8 +188,6 @@ const Settings = () => {
             </header>
             <LanguageSelector />
           </section>
-
-          {/* Data Management */}
           <section
             className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
             aria-labelledby="data-section"
@@ -250,8 +243,6 @@ const Settings = () => {
           </section>
         </div>
       </main>
-
-      {/* Reset Confirmation Modal */}
       {showResetModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-lg shadow-xl max-w-md w-full mx-4">

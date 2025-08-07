@@ -2,7 +2,9 @@
   "navigation": {
     "home": "Home",
     "settings": "Settings",
-    "theory": "Theory"
+    "theory": "Theory",
+    "darkMode": "Switch to dark mode",
+    "lightMode": "Switch to light mode"
   },
   "home": {
     "title": "21-Day Theory",
@@ -34,9 +36,54 @@
       "button": "Got it"
     }
   },
+  "notifications": {
+    "reminder": {
+      "title": "Don't forget your habit!",
+      "body": "Time to complete today's task and keep your streak going!"
+    },
+    "congratulations": {
+      "title": "Congratulations! 🎉",
+      "daily": "Great job completing day {{day}}! Keep up the momentum!",
+      "weekly": "Amazing! You've completed {{day}} days. One week milestone achieved!",
+      "final": "Incredible! You've completed all 21 days! Your new habit is formed!"
+    },
+    "motivation": {
+      "title": "Stay motivated! 💪",
+      "message1": "Every day you don't give up is a day closer to success!",
+      "message2": "Small progress is still progress. Keep going!",
+      "message3": "You're building something amazing, one day at a time!",
+      "message4": "Consistency is the key to lasting change. You've got this!"
+    }
+  },
   "settings": {
     "title": "Settings",
     "subtitle": "Customize your experience and configure your rewards",
+    "notifications": {
+      "title": "Notifications",
+      "description": "Get reminders and celebrate your progress with browser notifications.",
+      "enable": "Enable Notifications",
+      "testNotification": "Test Notification",
+      "status": {
+        "title": "Notification Status",
+        "default": "Not configured",
+        "granted": "Enabled",
+        "denied": "Blocked"
+      },
+      "dailyReminders": {
+        "title": "Daily Reminders",
+        "description": "Receive daily reminders at 8:00 PM to complete your habit."
+      },
+      "features": {
+        "title": "Notification Features",
+        "dailyReminders": "Daily habit reminders",
+        "milestones": "Milestone celebrations",
+        "motivation": "Motivational messages"
+      },
+      "notSupported": {
+        "title": "Notifications Not Supported",
+        "description": "Your browser doesn't support notifications or you're using a private/incognito window."
+      }
+    },
     "rewards": {
       "title": "Reward System",
       "daily": {

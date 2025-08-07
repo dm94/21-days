@@ -2,7 +2,9 @@
   "navigation": {
     "home": "Inicio",
     "settings": "Configuración",
-    "theory": "Teoría"
+    "theory": "Teoría",
+    "darkMode": "Cambiar a modo oscuro",
+    "lightMode": "Cambiar a modo claro"
   },
   "home": {
     "title": "Teoría de los 21 Días",
@@ -34,9 +36,54 @@
       "button": "Entendido"
     }
   },
+  "notifications": {
+    "reminder": {
+      "title": "¡No olvides tu hábito!",
+      "body": "¡Es hora de completar la tarea de hoy y mantener tu racha!"
+    },
+    "congratulations": {
+      "title": "¡Felicitaciones! 🎉",
+      "daily": "¡Excelente trabajo completando el día {{day}}! ¡Mantén el impulso!",
+      "weekly": "¡Increíble! Has completado {{day}} días. ¡Hito de una semana logrado!",
+      "final": "¡Increíble! ¡Has completado los 21 días! ¡Tu nuevo hábito está formado!"
+    },
+    "motivation": {
+      "title": "¡Mantente motivado! 💪",
+      "message1": "¡Cada día que no te rindes es un día más cerca del éxito!",
+      "message2": "Un pequeño progreso sigue siendo progreso. ¡Sigue adelante!",
+      "message3": "¡Estás construyendo algo increíble, un día a la vez!",
+      "message4": "La consistencia es la clave del cambio duradero. ¡Tú puedes!"
+    }
+  },
   "settings": {
     "title": "Configuración",
     "subtitle": "Personaliza tu experiencia y configura tus recompensas",
+    "notifications": {
+      "title": "Notificaciones",
+      "description": "Recibe recordatorios y celebra tu progreso con notificaciones del navegador.",
+      "enable": "Habilitar Notificaciones",
+      "testNotification": "Probar Notificación",
+      "status": {
+        "title": "Estado de Notificaciones",
+        "default": "No configurado",
+        "granted": "Habilitado",
+        "denied": "Bloqueado"
+      },
+      "dailyReminders": {
+        "title": "Recordatorios Diarios",
+        "description": "Recibe recordatorios diarios a las 8:00 PM para completar tu hábito."
+      },
+      "features": {
+        "title": "Características de Notificaciones",
+        "dailyReminders": "Recordatorios diarios de hábitos",
+        "milestones": "Celebraciones de hitos",
+        "motivation": "Mensajes motivacionales"
+      },
+      "notSupported": {
+        "title": "Notificaciones No Soportadas",
+        "description": "Tu navegador no soporta notificaciones o estás usando una ventana privada/incógnito."
+      }
+    },
     "rewards": {
       "title": "Sistema de Recompensas",
       "daily": {

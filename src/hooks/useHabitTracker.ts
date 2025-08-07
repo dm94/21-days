@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import useLocalStorage from './useLocalStorage';
+import { useNotifications } from './useNotifications';
 
 export interface HabitData {
   startDate: string | null;
@@ -34,6 +35,7 @@ const initialRewards: RewardSettings = {
  * Handles automatic reset if a day is missed
  */
 export function useHabitTracker() {
+  const { sendCongratulations } = useNotifications();
   const [habitData, setHabitData] = useLocalStorage<HabitData>('habitData', initialHabitData);
   const [rewards, setRewards] = useLocalStorage<RewardSettings>('rewards', initialRewards);
   const [showReward, setShowReward] = useState<'daily' | 'weekly' | 'final' | null>(null);
@@ -92,6 +94,9 @@ export function useHabitTracker() {
     };
 
     setHabitData(newHabitData);
+
+    // Send congratulations notification
+    sendCongratulations(newCurrentDay);
 
     // Show appropriate reward
     if (newCurrentDay === 21) {
