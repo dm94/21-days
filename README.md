@@ -9,6 +9,7 @@ This application is designed for people looking to form new habits in a structur
 ## ✨ Features
 
 ### 🏠 Main Page
+
 - **Day Counter**: Visual display of completed days in the current cycle (0-21)
 - **Completion Button**: Large, prominent button to mark daily task as completed
 - **Linear Calendar**: Visual progress representation with 21-day indicators
@@ -16,11 +17,13 @@ This application is designed for people looking to form new habits in a structur
 - **Language Selector**: Switch between Spanish and English
 
 ### ⚙️ Settings Page
+
 - **Reward System**: Configure custom rewards for daily, weekly, and monthly achievements
 - **Language Preferences**: Set preferred language with immediate application
 - **Data Management**: Options for future export/import functionality
 
 ### 📚 Theory Page
+
 - **Educational Content**: Detailed explanation of the 21-day theory
 - **Scientific Benefits**: Information about habit formation and maintenance tips
 - **Motivational Resources**: Structured content to support user journey
@@ -40,7 +43,6 @@ This application is designed for people looking to form new habits in a structur
 - **Internationalization**: react-i18next for multi-language support
 - **State Management**: Zustand for lightweight state management
 - **Icons**: Lucide React for consistent iconography
-- **Notifications**: Sonner for toast notifications
 - **Build Tool**: Vite for fast development and building
 - **Storage**: Browser's localStorage for data persistence
 
@@ -54,17 +56,20 @@ This application is designed for people looking to form new habits in a structur
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd 21-days
 ```
 
 2. Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 3. Start the development server:
+
 ```bash
 pnpm dev
 ```
