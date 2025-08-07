@@ -13,6 +13,7 @@ import {
 import { useHabitTracker, RewardSettings } from "../hooks/useHabitTracker";
 import LanguageSelector from "../components/LanguageSelector";
 import NotificationSettings from "../components/NotificationSettings";
+import ConfirmationModal from "../components/ConfirmationModal";
 import Seo from "../components/SEO";
 
 const Settings = () => {
@@ -38,7 +39,7 @@ const Settings = () => {
         try {
           const data = JSON.parse(e.target?.result as string);
           importData(data);
-          setLocalRewards(data.rewards || rewards);
+          setLocalRewards(data.rewards ?? rewards);
         } catch (error) {
           console.error("Error importing data:", error);
         }
@@ -243,34 +244,14 @@ const Settings = () => {
           </section>
         </div>
       </main>
-      {showResetModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-lg shadow-xl max-w-md w-full mx-4">
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {t("settings.data.resetTitle")}
-              </h3>
-              <p className="text-gray-600 mb-6">
-                {t("settings.data.resetConfirm")}
-              </p>
-              <div className="flex gap-3">
-                <button
-                  onClick={() => setShowResetModal(false)}
-                  className="flex-1 bg-gray-300 hover:bg-gray-400 text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors"
-                >
-                  {t("common.cancel")}
-                </button>
-                <button
-                  onClick={handleReset}
-                  className="flex-1 bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
-                >
-                  {t("settings.data.resetButton")}
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      <ConfirmationModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={handleReset}
+        title={t("settings.data.resetTitle")}
+        message={t("settings.data.resetConfirm")}
+        confirmText={t("settings.data.resetButton")}
+      />
     </>
   );
 };
