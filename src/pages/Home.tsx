@@ -129,7 +129,7 @@ const Home = () => {
                   className="mt-4 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors"
                 >
                   <RotateCcw className="w-4 h-4" />
-                  Start New Habit
+                  {t('home.actions.startNewHabit')}
                 </button>
               </div>
             )}

@@ -35,6 +35,9 @@
       "title": "Progreso Reiniciado",
       "message": "No completaste la tarea ayer. Tu progreso se ha reiniciado automáticamente.",
       "button": "Entendido"
+    },
+    "actions": {
+      "startNewHabit": "Comenzar Nuevo Hábito"
     }
   },
   "notifications": {

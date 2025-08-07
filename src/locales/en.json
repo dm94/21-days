@@ -35,6 +35,9 @@
       "title": "Progress Reset",
       "message": "You didn't complete the task yesterday. Your progress has been automatically reset.",
       "button": "Got it"
+    },
+    "actions": {
+      "startNewHabit": "Start New Habit"
     }
   },
   "notifications": {
