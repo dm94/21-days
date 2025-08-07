@@ -41,7 +41,6 @@ This application is designed for people looking to form new habits in a structur
 - **Styling**: Tailwind CSS for responsive and consistent design
 - **Routing**: React Router DOM for navigation
 - **Internationalization**: react-i18next for multi-language support
-- **State Management**: Zustand for lightweight state management
 - **Icons**: Lucide React for consistent iconography
 - **Build Tool**: Vite for fast development and building
 - **Storage**: Browser's localStorage for data persistence
