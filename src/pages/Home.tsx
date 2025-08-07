@@ -141,7 +141,7 @@ const Home = () => {
               className="text-lg font-semibold text-gray-900 dark:text-white mb-4"
               id="habit-status"
             >
-              Estado del Hábito
+              {t("home.habitStatus.title")}
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -187,15 +187,11 @@ const Home = () => {
           </section>
         </div>
       </main>
-
-      {/* Reward Modal */}
       <RewardModal
         type={showReward}
         rewards={rewards}
         onClose={() => setShowReward(null)}
       />
-
-      {/* Reset Modal */}
       {showResetModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-md w-full mx-4 transition-colors duration-300">

@@ -13,6 +13,7 @@
     "completeTaskButton": "Task Completed!",
     "startJourney": "Start My Journey",
     "habitStatus": {
+      "title": "Habit Status",
       "startDate": "Start date",
       "consecutiveDays": "Consecutive days",
       "daysRemaining": "Days remaining",
