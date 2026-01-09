@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
 type NotificationPermission = 'default' | 'granted' | 'denied';
@@ -112,29 +112,27 @@ export function useNotifications() {
   const scheduleDailyReminder = useCallback((hour: number = 20) => {
     if (permission !== 'granted') return;
 
-    const now = new Date();
-    const reminderTime = new Date();
-    reminderTime.setHours(hour, 0, 0, 0);
+    const schedule = () => {
+      const now = new Date();
+      const reminderTime = new Date();
+      reminderTime.setHours(hour, 0, 0, 0);
 
-    // If the time has passed today, schedule for tomorrow
-    if (reminderTime <= now) {
-      reminderTime.setDate(reminderTime.getDate() + 1);
-    }
+      // If the time has passed today, schedule for tomorrow
+      if (reminderTime <= now) {
+        reminderTime.setDate(reminderTime.getDate() + 1);
+      }
 
-    const timeUntilReminder = reminderTime.getTime() - now.getTime();
+      const timeUntilReminder = reminderTime.getTime() - now.getTime();
 
-    setTimeout(() => {
-      sendHabitReminder();
-      // Schedule next day's reminder
-      scheduleDailyReminder(hour);
-    }, timeUntilReminder);
+      setTimeout(() => {
+        sendHabitReminder();
+        // Schedule next day's reminder
+        schedule();
+      }, timeUntilReminder);
+    };
+
+    schedule();
   }, [permission, sendHabitReminder]);
-
-  useEffect(() => {
-    if ('Notification' in window) {
-      setPermission(Notification.permission);
-    }
-  }, []);
 
   return {
     permission,
