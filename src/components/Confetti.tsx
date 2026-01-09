@@ -10,6 +10,7 @@ interface ConfettiPiece {
   velocityX: number;
   velocityY: number;
   rotationSpeed: number;
+  shape: 'circle' | 'square';
 }
 
 interface ConfettiProps {
@@ -17,6 +18,11 @@ interface ConfettiProps {
   duration?: number;
   particleCount?: number;
 }
+
+const COLORS = [
+  '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
+  '#DDA0DD', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E9'
+];
 
 const Confetti: React.FC<ConfettiProps> = ({ 
   isActive, 
@@ -26,39 +32,35 @@ const Confetti: React.FC<ConfettiProps> = ({
   const [particles, setParticles] = useState<ConfettiPiece[]>([]);
   const [isVisible, setIsVisible] = useState(false);
 
-  const colors = [
-    '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
-    '#DDA0DD', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E9'
-  ];
-
-  const createParticle = (id: number): ConfettiPiece => {
-    return {
-      id,
-      x: Math.random() * window.innerWidth,
-      y: -10,
-      rotation: Math.random() * 360,
-      color: colors[Math.floor(Math.random() * colors.length)],
-      size: Math.random() * 8 + 4,
-      velocityX: (Math.random() - 0.5) * 4,
-      velocityY: Math.random() * 3 + 2,
-      rotationSpeed: (Math.random() - 0.5) * 10,
-    };
-  };
-
   useEffect(() => {
     if (!isActive) {
-      setIsVisible(false);
-      setParticles([]);
       return;
     }
 
-    setIsVisible(true);
-    
-    // Create initial particles
-    const initialParticles = Array.from({ length: particleCount }, (_, i) => 
-      createParticle(i)
-    );
-    setParticles(initialParticles);
+    const createParticle = (id: number): ConfettiPiece => {
+      return {
+        id,
+        x: Math.random() * window.innerWidth,
+        y: -10,
+        rotation: Math.random() * 360,
+        color: COLORS[Math.floor(Math.random() * COLORS.length)],
+        size: Math.random() * 8 + 4,
+        velocityX: (Math.random() - 0.5) * 4,
+        velocityY: Math.random() * 3 + 2,
+        rotationSpeed: (Math.random() - 0.5) * 10,
+        shape: Math.random() > 0.5 ? 'circle' : 'square',
+      };
+    };
+
+    const startTimeout = setTimeout(() => {
+      setIsVisible(true);
+      
+      // Create initial particles
+      const initialParticles = Array.from({ length: particleCount }, (_, i) => 
+        createParticle(i)
+      );
+      setParticles(initialParticles);
+    }, 0);
 
     // Animation loop
     const animationInterval = setInterval(() => {
@@ -87,6 +89,9 @@ const Confetti: React.FC<ConfettiProps> = ({
     return () => {
       clearInterval(animationInterval);
       clearTimeout(timeout);
+      clearTimeout(startTimeout);
+      setIsVisible(false);
+      setParticles([]);
     };
   }, [isActive, duration, particleCount]);
 
@@ -112,7 +117,7 @@ const Confetti: React.FC<ConfettiProps> = ({
             height: `${particle.size}px`,
             backgroundColor: particle.color,
             transform: `rotate(${particle.rotation}deg)`,
-            borderRadius: Math.random() > 0.5 ? '50%' : '0%',
+            borderRadius: particle.shape === 'circle' ? '50%' : '0%',
           }}
         />
       ))}
